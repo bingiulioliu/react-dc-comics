@@ -10,3 +10,22 @@ Il font utilizzato è Open Sans
 
 ### Bonus: 
 Creare un componente aggiuntivo per gestire la fascia azzurra con le icone.
+
+## Struttura
+
+- Header
+    - Navbar
+        - Logo
+        - Links list
+- Main
+    - Content
+- Footer
+    - Blue bar
+        - Link list
+    - DC bg list
+        - List title x4
+            - list item
+    - CTA
+        - Sign up cta
+        - Follow us cta
+            - Social links
