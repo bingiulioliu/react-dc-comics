@@ -1,14 +1,14 @@
 
 import Navbar from "./components/Navbar";
 import Content from "./components/Content";
-import Member from "./components/Member";
+import Footer from "./components/Footer";
 
 function App() {
   return (
     <>
       <Navbar/>
       <Content/>
-      <Member/>
+      <Footer/>
     </>
   )
 }
