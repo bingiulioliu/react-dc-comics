@@ -2,3 +2,8 @@
     min-height: 100px;
 }
 
+.memberIcon {
+    height: 50px; 
+    object-fit: contain;
+}
+

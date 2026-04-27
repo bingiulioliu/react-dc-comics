@@ -1,0 +1,38 @@
+import style from './Content.module.css'
+
+function Member() {
+    return <section className="bg-primary py-4">
+        <div className="container">
+            <ul className="d-flex justify-content-center align-items-center list-unstyled m-0 gap-3">
+
+                <li className="d-flex align-items-center">
+                    <img src="/img/buy-comics-digital-comics.png" alt="Digital Comics" className={style.memberIcon}/>
+                    <span className="text-white ms-2 text-uppercase">Digital Comics</span>
+                </li>
+
+                <li className="d-flex align-items-center">
+                    <img src="/img/buy-comics-merchandise.png" alt="Merchandise" className={style.memberIcon}/>
+                    <span className="text-white ms-2 text-uppercase" >DC Merchandise</span>
+                </li>
+
+                <li className="d-flex align-items-center">
+                    <img src="/img/buy-comics-subscriptions.png" alt="Subscriptions" className={style.memberIcon}/>
+                    <span className="text-white ms-2 text-uppercase">Subscription</span>
+                </li>
+
+                <li className="d-flex align-items-center">
+                    <img src="/img/buy-comics-shop-locator.png" alt="Shop Locator" className={style.memberIcon}/>
+                    <span className="text-white ms-2 text-uppercase">Comic Shop Locator</span>
+                </li>
+
+                <li className="d-flex align-items-center">
+                    <img src="/img/buy-dc-power-visa.svg" alt="Power Visa" className={style.memberIcon}/>
+                    <span className="text-white ms-2 text-uppercase">DC Power Visa</span>
+                </li>
+
+            </ul>
+        </div>
+    </section>
+}
+
+export default Member;
