@@ -4,7 +4,16 @@ import comics from './data/comics';
 
 
 function Content() {
-    let jsxComicsList = [];
+
+    const comicsJsx = comics.map(comic =>{
+        const { id, title, thumb } = comic;
+        return (
+            <div key={id} className='col-2' >
+                <img className="img-fluid" src={thumb} alt={title} />
+                <span className={style.comicTitle}>{title.toUpperCase()}</span>
+            </div>
+        )
+    });
     return <div className={`bg-dark ${style.content}`}>
                 <div className={style.jumbotronWrapper}>
                     <img className={`${style.jumboImg} img-fluid w-100`} src="./img/jumbotron.jpg" alt="" />
@@ -13,7 +22,7 @@ function Content() {
                 <div className='container position-relative'>
                     <button className={style.btnSeries}>CURRENT SERIES</button>
                     <div className='row'>
-
+                        {comicsJsx}
                     </div>
                     <div className='text-center'>
                         <button className={style.btnLoadMore}>LOAD MORE</button>
