@@ -2,7 +2,8 @@ import style from './Content.module.css'
 
 function Content() {
     return <div className={`bg-dark d-flex align-items-center justify-content-center ${style.content}`}>
-        <h3 class="text-light">--&gt; Content goes here &lt;--</h3>
+        <img className={`${style.jumboImg} img-fluid w-100`} src="./img/jumbotron.jpg" alt="" />
+        
     </div>
 
 }

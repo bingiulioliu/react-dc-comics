@@ -7,19 +7,19 @@ function Navbar() {
     for (let i = 0; i < navList.length; i++) {
         const tempList = navList[i].toUpperCase();
         jsxNavList.push(<li class="nav-item">
-            <a class="nav-link " aria-current="page" href="#">{tempList}</a>
+            <a className="nav-link " aria-current="page" href="#">{tempList}</a>
         </li>)
     }
 
     return <navbar>
-        <nav class="navbar navbar-expand-lg ">
-            <div class="container-fluid">
+        <nav className="navbar navbar-expand-lg ">
+            <div className="container-fluid">
                 <img src="/img/dc-logo.png" alt="" />
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span className="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ms-auto">
+                <div className="collapse navbar-collapse" id="navbarNav">
+                    <ul className="navbar-nav ms-auto">
                         {jsxNavList}
                         {/*
                         <li class="nav-item">

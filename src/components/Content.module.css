@@ -27,3 +27,9 @@
 .listTitle {
     text-transform: uppercase;
 }
+
+.jumboImg {
+    object-position: top;
+    max-height: 300px;
+    object-fit: cover;
+}
