@@ -9,7 +9,7 @@ function Content() {
         const { id, title, thumb } = comic;
         const cleanTitle = title.split('#')[0].trim();
         return (
-            <div key={id} className={`${style.comicCont} col-2`} >
+            <div key={id} className={`${style.comicCont} col-6 col-md-4 col-lg-2`} >
                 <img className={`${style.comicImg} img-fluid`} src={thumb} alt={title} />
                 <span className={style.comicTitle}>{cleanTitle.toUpperCase()}</span>
             </div>
