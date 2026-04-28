@@ -1,6 +1,4 @@
-.content {
-    min-height: 100px;
-}
+
 
 .memberIcon {
     height: 50px; 
@@ -28,8 +26,33 @@
     text-transform: uppercase;
 }
 
+.jumbotronWrapper{
+    position: relative;
+}
+
 .jumboImg {
     object-position: top;
     max-height: 300px;
     object-fit: cover;
+}
+
+.btnSeries{
+    background-color: #0282f9;
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    font-weight: bold;
+    font-size: 1.2rem;
+    position: absolute;
+    top: -25px;
+    left: 15px;
+}
+
+.btnLoadMore{
+    background-color: #0282f9;
+    color: white;
+    border: none;
+    padding: 10px 50px;
+    font-weight: bold;
+    font-size: 0.9rem;
 }
