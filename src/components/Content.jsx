@@ -8,20 +8,22 @@ function Content() {
     const comicsJsx = comics.map(comic =>{
         const { id, title, thumb } = comic;
         return (
-            <div key={id} className='col-2' >
-                <img className="img-fluid" src={thumb} alt={title} />
+            <div key={id} className={`${style.comicCont} col-2`} >
+                <img className={`${style.comicImg} img-fluid`} src={thumb} alt={title} />
                 <span className={style.comicTitle}>{title.toUpperCase()}</span>
             </div>
         )
     });
-    return <div className={`bg-dark ${style.content}`}>
+    return <div className={` bg-dark ${style.content}`}>
                 <div className={style.jumbotronWrapper}>
                     <img className={`${style.jumboImg} img-fluid w-100`} src="./img/jumbotron.jpg" alt="" />
-                <div>
+                </div>
 
-                <div className='container position-relative'>
-                    <button className={style.btnSeries}>CURRENT SERIES</button>
-                    <div className='row'>
+                <div className='container position-relative mt-5'>
+                    <div>
+                        <button className={style.btnSeries}>CURRENT SERIES</button>
+                    </div>
+                    <div className='row g-4'>
                         {comicsJsx}
                     </div>
                     <div className='text-center'>
@@ -29,8 +31,7 @@ function Content() {
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
+
 
 }
 
