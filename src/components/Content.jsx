@@ -7,10 +7,11 @@ function Content() {
 
     const comicsJsx = comics.map(comic =>{
         const { id, title, thumb } = comic;
+        const cleanTitle = title.split('#')[0].trim();
         return (
             <div key={id} className={`${style.comicCont} col-2`} >
                 <img className={`${style.comicImg} img-fluid`} src={thumb} alt={title} />
-                <span className={style.comicTitle}>{title.toUpperCase()}</span>
+                <span className={style.comicTitle}>{cleanTitle.toUpperCase()}</span>
             </div>
         )
     });
@@ -31,8 +32,6 @@ function Content() {
                     </div>
                 </div>
             </div>
-
-
 }
 
 export default Content;
