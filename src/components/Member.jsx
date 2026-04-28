@@ -25,9 +25,9 @@ function Member() {
         }
     ];
 
-    const membershipListJsx = membershipList.map(member =>{
+    const membershipListJsx = membershipList.map((member, index) =>{
         const {url, text} = member;
-        return <li className="d-flex align-items-center">
+        return <li key={index} className="d-flex align-items-center">
                     <img src={url} alt={text} className={style.memberIcon} />
                     <span className="text-white ms-2 text-uppercase">{text}</span>
                 </li>
