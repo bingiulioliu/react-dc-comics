@@ -6,7 +6,7 @@ function Navbar() {
     // Ciclo for per stendere la lista 
     for (let i = 0; i < navList.length; i++) {
         const tempList = navList[i].toUpperCase();
-        jsxNavList.push(<li class="nav-item">
+        jsxNavList.push(<li className="nav-item">
             <a className="nav-link " aria-current="page" href="#">{tempList}</a>
         </li>)
     }
