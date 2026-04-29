@@ -1,9 +1,9 @@
 import style from './Content.module.css'
-import comics from './data/comics';
 
 
 
-function Content() {
+
+function Content({comics}) {
 
     const comicsJsx = comics.map(comic =>{
         const { id, title, thumb } = comic;
